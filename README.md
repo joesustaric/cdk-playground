@@ -24,7 +24,7 @@ $ npm i -g aws-cdk
 $ cdk init app --language javascript
 ```
 
-### Managing AWS Construct Libraru Modules 
+### Managing AWS Construct Library Modules 
 
 AWS Construct Library modules are named like `@aws-cdk/SERVICE-NAME`
 
