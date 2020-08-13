@@ -42,7 +42,9 @@ new MyFirstStack(app, 'hello-cdk');
 app.synth();
 ```
 
-### Lifecycle
+### App Lifecycle
+Summarised from [here](https://docs.aws.amazon.com/cdk/latest/guide/apps.html).
+
 1. Construction
 
 Instantiate all the defined constructs + link them together. Most of the app code is executed.
