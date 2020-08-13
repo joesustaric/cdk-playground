@@ -13,7 +13,7 @@ More info [here](https://docs.aws.amazon.com/cdk/latest/guide/home.html).
  * `cdk diff`             compare deployed stack with current state
  * `cdk synth`            emits the synthesized CloudFormation template
 
-### Install
+### Install CDK
 
 ```bash
 # requires Node.js ≥ 10.13.0
@@ -22,6 +22,18 @@ $ npm i -g aws-cdk
 
 # To create a new js project in a new blank dir run..
 $ cdk init app --language javascript
+```
+
+### Managing AWS Construct Libraru Modules 
+
+AWS Construct Library modules are named like `@aws-cdk/SERVICE-NAME`
+
+```bash
+# Install
+npm install @aws-cdk/aws-s3 @aws-cdk/aws-lambda
+
+# Update
+npm update
 ```
 
 ### CDK Key Concepts
@@ -111,4 +123,14 @@ The CDK CLI Takes deploy artifacts and deploys it to AWS. Uploads assets and beg
                                                                                  +-----------------+
 ```
 
-## TODO
+## TODOs
+- [] figure out good stack dir structure
+- [] figure out how good is the testing lib? [read this](https://docs.aws.amazon.com/cdk/latest/guide/testing.html)
+- [] example of L1 vs L2 components.
+- [] ci
+- [] stack drifts
+- [] IAM roles
+
+
+## TO DO later...
+Things I like things I don't like..
