@@ -43,6 +43,27 @@ app.synth();
 ```
 
 ### Lifecycle
+1. Construction
+
+Instantiate all the defined constructs + link them together. Most of the app code is executed.
+
+2. Preparation
+
+Constructs that have implimented the `prepare()` go through another round to set up their final state (tranparent / no user feedback) Not recommended to use the prepare hook. It could impact behaviour. 
+
+3. Validation
+
+Constructs that have implimented the `validate()` can self validate to ensure they're in a state to deploy. Recommended to perform validation as soon as possible. Better error feedback.
+
+4. Synthesis
+
+`app,synth()` traverses the construct tree and invokes this method on all constructs. The output from constructs that impliment `synthesize` method can emit deployment artifacts.. eg CFN templates, docker image assets etc.. Most cases you might not need to use this.
+
+5. Deployment
+
+The CDK CLI Takes deploy artifacts and deploys it to AWS. Uploads assets and begins CFN deployment to create resources.
+
+
 ```
                   +-------------------------------------------------------------------------------------+
                   |                                                                                     |
