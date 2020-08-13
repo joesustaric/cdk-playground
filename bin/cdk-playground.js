@@ -5,3 +5,4 @@ const { CdkPlaygroundStack } = require('../lib/cdk-playground-stack');
 
 const app = new cdk.App();
 new CdkPlaygroundStack(app, 'CdkPlaygroundStack');
+// new CdkVPCStack(app, 'cfnVPCCDK');
