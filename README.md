@@ -123,6 +123,20 @@ The CDK CLI Takes deploy artifacts and deploys it to AWS. Uploads assets and beg
                                                                                  +-----------------+
 ```
 
+# Testing Concepts
+Copy Pastaed from [here](https://docs.aws.amazon.com/cdk/latest/guide/testing.html).
+
+#### Snapshot tests
+Test the synthesized AWS CloudFormation template against a previously-stored "golden master" template. This way, when you're refactoring your app, you can be sure that the refactored code works exactly the same way as the original. If the changes were intentional, you can accept a new master for future tests.
+
+#### Fine-grained assertions
+test specific aspects of the generated AWS CloudFormation template, such as "this resource has this property with this value." These tests help when you're developing new features, since any code you add will cause your snapshot test to fail even if existing features still work. When this happens, your fine-grained tests will reassure you that the existing functionality is unaffected.
+
+#### Validation 
+tests help you "fail fast" by making sure your AWS CDK constructs raise errors when you pass them invalid data. The ability to do this type of testing is a big advantage of developing your infrastructure in a general-purpose programming language.
+
+- [ ] Examples of all these above
+
 ## TODOs
 - [ ] figure out good stack dir structure
 - [ ] figure out how good is the testing lib? [read this](https://docs.aws.amazon.com/cdk/latest/guide/testing.html)
