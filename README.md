@@ -127,7 +127,8 @@ The CDK CLI Takes deploy artifacts and deploys it to AWS. Uploads assets and beg
 - [ ] figure out good stack dir structure
 - [ ] figure out how good is the testing lib? [read this](https://docs.aws.amazon.com/cdk/latest/guide/testing.html)
 - [ ] example of L1 vs L2 components.
-- [ ] ci
+- [ ] secrets managment [read this](https://docs.aws.amazon.com/cdk/latest/guide/get_secrets_manager_value.html)
+- [ ] ci / cd [read this](https://docs.aws.amazon.com/cdk/latest/guide/cdk_pipeline.html)
 - [ ] stack drifts
 - [ ] IAM roles
 
