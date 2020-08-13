@@ -6,6 +6,13 @@ AWS have recently released CDK. I want to play with it.
 
 More info [here](https://docs.aws.amazon.com/cdk/latest/guide/home.html).
 
+### Install
+
+```bash
+# requires Node.js ≥ 10.13.0
+# !! versions 13.0.0 to 13.6.0 are not supported !!
+$ npm i -g aws-cdk
+```
 
 ### CDK Key Concepts
 
